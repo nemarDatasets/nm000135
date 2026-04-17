@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000135-blue)](https://doi.org/10.82901/nemar.nm000135)
+
 # BNCI 2014-004 Motor Imagery dataset
 
 BNCI 2014-004 Motor Imagery dataset.
