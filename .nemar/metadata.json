@@ -1,0 +1,92 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "R. Leeb": {},
+    "C. Brunner": {},
+    "G. R. Müller-Putz": {},
+    "A. Schlögl": {},
+    "G. Pfurtscheller": {},
+    "F. Lee": {},
+    "C. Keinrath": {},
+    "R. Scherer": {},
+    "H. Bischof": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1109/TNSRE.2007.906956",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000135",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000135",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    }
+  ],
+  "title": "BNCI 2014-004 Motor Imagery dataset",
+  "license": "CC-BY-ND-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "23.5 MB (6 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "This dataset comprises EEG recordings from 9 healthy subjects performing two-class motor imagery tasks (left vs. right hand movements) as part of BCI Competition IV Dataset 2b. Data were collected across five sessions per subject: two screening sessions without feedback and three feedback sessions with visual smiley feedback. The dataset includes 3 bipolar EEG channels (C3, Cz, C4) and 3 EOG channels sampled at 250 Hz, with online bandpass (0.5-100 Hz) and notch (50 Hz) filtering applied during acquisition.",
+  "methods_description": "Subjects performed kinesthetic motor imagery of left or right hand movements across five sessions. Two screening sessions (01T, 02T) without feedback consisted of 6 runs with 20 trials each (120 trials total per session). Three feedback sessions (03T, 04E, 05E) with visual smiley feedback consisted of 4 runs with 40 trials each (160 trials total per session). Each trial included a fixation cross, auditory cue, visual arrow cue (1.25 s duration), and 4 s imagery period. EEG was recorded from 3 bipolar channels (C3, Cz, C4) and 3 monopolar EOG channels using g.tec hardware with rtsBCI software (MATLAB/Simulink). Reference electrode at left mastoid, ground at Fz. Online filters: 0.5-100 Hz bandpass and 50 Hz notch.",
+  "keywords": [
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "BCI competition"
+    },
+    {
+      "term": "visual feedback"
+    },
+    {
+      "term": "motor control"
+    }
+  ],
+  "source_hash": "93915828e90fc913b3b002c792ddb8be25b37552aeadb6764277faa78e57dd7a"
+}
