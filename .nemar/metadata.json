@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2014-004 Motor Imagery dataset",
-  "description": "A two-class motor imagery EEG dataset from the BCI Competition IV (Graz data set B) comprising recordings from 9 healthy subjects performing kinesthetic imagery of left and right hand movements. The dataset includes 5 sessions per subject (2 screening without feedback, 3 with visual smiley feedback) with 3 bipolar EEG channels (C3, Cz, C4) and 3 EOG channels sampled at 250 Hz. This benchmark dataset is widely used for evaluating binary motor imagery classification algorithms in brain-computer interface research.",
-  "methods_description": "Subjects performed kinesthetic motor imagery of left or right hand movements across two screening sessions (120 trials each without feedback) and three feedback sessions (160 trials each with smiley feedback). EEG was recorded from 3 bipolar channels (C3, Cz, C4) and 3 monopolar EOG channels at 250 Hz using g.tec hardware with rtsBCI software. Online filtering included 0.5-100 Hz bandpass and 50 Hz notch filters. Ground electrode at Fz, reference at left mastoid. Cue-based paradigm with 1.25 s visual arrow cue followed by 4 s imagery period.",
+  "description": "A two-class motor imagery EEG dataset from the BCI Competition IV (Graz data set B) comprising recordings from 9 healthy subjects performing kinesthetic imagery of left and right hand movements. The dataset includes 5 sessions per subject (2 screening without feedback, 3 with visual smiley feedback) with 3 bipolar EEG channels (C3, Cz, C4) and 3 EOG channels sampled at 250 Hz, totaling 280 trials per subject. This benchmark dataset is widely used for evaluating binary motor imagery classification algorithms in brain-computer interface research.",
+  "methods_description": "Subjects performed kinesthetic motor imagery of left or right hand movements across two screening sessions (120 trials each without feedback) and three feedback sessions (160 trials each with smiley feedback). Each trial consisted of a fixation cross, auditory cue, visual arrow cue (1.25 s duration), and 4 s imagery period. EEG was recorded from 3 bipolar channels (C3, Cz, C4) and 3 monopolar EOG channels at 250 Hz using g.tec hardware with rtsBCI software. Online filtering included 0.5-100 Hz bandpass and 50 Hz notch filters. Ground electrode at Fz, reference at left mastoid.",
   "license": "CC-BY-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -19,11 +19,6 @@
   },
   "keywords": [
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
       "term": "motor imagery"
     },
     {
@@ -32,13 +27,18 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
       "term": "EEG"
     },
     {
       "term": "BCI competition"
     },
     {
-      "term": "motor control"
+      "term": "visual feedback"
     },
     {
       "term": "classification"
@@ -88,5 +88,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "16ae10a6fe70cda77364d580f65da0c85dabda961c893019638e1a28d3d6a242"
+  "source_hash": "d8e86f1b7e6e3363cc0631c610102805c85a53ca4980186340c5760226ac0864"
 }
