@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2014-004 Motor Imagery dataset",
-  "description": "A two-class motor imagery EEG dataset from the BCI Competition IV (Graz data set B) comprising recordings from 9 healthy subjects performing kinesthetic imagery of left and right hand movements. The dataset includes 5 sessions per subject (2 screening without feedback, 3 with visual smiley feedback) with 3 bipolar EEG channels (C3, Cz, C4) and 3 EOG channels sampled at 250 Hz, totaling 280 trials per subject. This benchmark dataset is widely used for evaluating binary motor imagery classification algorithms in brain-computer interface research.",
-  "methods_description": "Subjects performed kinesthetic motor imagery of left or right hand movements across two screening sessions (120 trials each without feedback) and three feedback sessions (160 trials each with smiley feedback). Each trial consisted of a fixation cross, auditory cue, visual arrow cue (1.25 s duration), and 4 s imagery period. EEG was recorded from 3 bipolar channels (C3, Cz, C4) and 3 monopolar EOG channels at 250 Hz using g.tec hardware with rtsBCI software. Online filtering included 0.5-100 Hz bandpass and 50 Hz notch filters. Ground electrode at Fz, reference at left mastoid.",
+  "description": "EEG recordings from 9 healthy, BCI-naive participants performing two-class motor imagery (left vs. right hand), originally released as BCI Competition 2008 Graz data set B (BCI Competition IV Dataset 2b). Each participant completed five sessions: two screening sessions without feedback and three sessions with smiley visual feedback. Three bipolar EEG channels (C3, Cz, C4) and three EOG channels were recorded at 250 Hz.",
+  "methods_description": "Participants performed kinesthetic motor imagery of left or right hand movements after an arrow cue. Screening sessions had 6 runs of 20 trials each, without feedback. Feedback sessions had 4 runs of 40 trials each, with continuous smiley feedback. Signals were recorded with g.tec amplifiers using rtsBCI (MATLAB/Simulink) at 250 Hz, with a 0.5-100 Hz bandpass and a 50 Hz notch filter. Ground was at Fz and reference at the left mastoid.",
   "license": "CC-BY-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -19,29 +19,24 @@
   },
   "keywords": [
     {
-      "term": "motor imagery"
-    },
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
       "term": "Electroencephalography",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "EEG"
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "motor imagery"
     },
     {
       "term": "BCI competition"
     },
     {
-      "term": "visual feedback"
+      "term": "neurofeedback"
     },
     {
-      "term": "classification"
+      "term": "EEG"
     }
   ],
   "related_identifiers": [
@@ -77,7 +72,7 @@
     "eeg"
   ],
   "sizes": [
-    "501.5 MB (24 files)"
+    "478 MB (24 files)"
   ],
   "formats": [
     ".bdf",
