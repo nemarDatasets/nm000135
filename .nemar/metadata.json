@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2014-004 Motor Imagery dataset",
-  "description": "EEG recordings from 9 healthy, BCI-naive participants performing two-class motor imagery (left vs. right hand), originally released as BCI Competition 2008 Graz data set B (BCI Competition IV Dataset 2b). Each participant completed five sessions: two screening sessions without feedback and three sessions with smiley visual feedback. Three bipolar EEG channels (C3, Cz, C4) and three EOG channels were recorded at 250 Hz.",
-  "methods_description": "Participants performed kinesthetic motor imagery of left or right hand movements after an arrow cue. Screening sessions had 6 runs of 20 trials each, without feedback. Feedback sessions had 4 runs of 40 trials each, with continuous smiley feedback. Signals were recorded with g.tec amplifiers using rtsBCI (MATLAB/Simulink) at 250 Hz, with a 0.5-100 Hz bandpass and a 50 Hz notch filter. Ground was at Fz and reference at the left mastoid.",
+  "description": "EEG recordings from 9 healthy, BCI-naive participants performing two-class motor imagery (left versus right hand), originally released as BCI Competition 2008 Graz data set B (BCI Competition IV dataset 2b). Each participant completed five sessions: two screening sessions without feedback and three sessions with smiley feedback. Data comprise three bipolar EEG channels (C3, Cz, C4) and three EOG channels sampled at 250 Hz.",
+  "methods_description": "Participants performed kinesthetic motor imagery of left or right hand movements. Screening sessions (6 runs x 20 trials) used a fixation cross, beep and arrow cue followed by 4 s of imagery. Feedback sessions (4 runs x 40 trials) presented a smiley with continuous visual feedback during the cue period (3-7.5 s). EEG and EOG were recorded with g.tec amplifiers at 250 Hz, with a 0.5-100 Hz bandpass and 50 Hz notch filter. The EEG ground was at Fz, and the EOG channels were referenced to the left mastoid. Stimulus presentation used rtsBCI (MATLAB/Simulink).",
   "license": "CC-BY-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -19,12 +19,19 @@
   },
   "keywords": [
     {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
       "term": "Electroencephalography",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "brain-computer interface"
+      "term": "Imagination",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D007092"
     },
     {
       "term": "motor imagery"
@@ -33,10 +40,7 @@
       "term": "BCI competition"
     },
     {
-      "term": "neurofeedback"
-    },
-    {
-      "term": "EEG"
+      "term": "smiley feedback"
     }
   ],
   "related_identifiers": [
@@ -83,5 +87,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "d8e86f1b7e6e3363cc0631c610102805c85a53ca4980186340c5760226ac0864"
+  "source_hash": "e8296c8938c73449064453c3e1b92d6bcbfeb40456f72716779dea0f818ec25d"
 }
