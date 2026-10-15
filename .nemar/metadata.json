@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "BNCI 2014-004 Motor Imagery dataset",
-  "description": "EEG recordings from 9 healthy, BCI-naive participants performing two-class motor imagery (left versus right hand), originally released as BCI Competition 2008 Graz data set B (BCI Competition IV dataset 2b). Each participant completed five sessions: two screening sessions without feedback and three sessions with smiley feedback. Data comprise three bipolar EEG channels (C3, Cz, C4) and three EOG channels sampled at 250 Hz.",
-  "methods_description": "Participants performed kinesthetic motor imagery of left or right hand movements. Screening sessions (6 runs x 20 trials) used a fixation cross, beep and arrow cue followed by 4 s of imagery. Feedback sessions (4 runs x 40 trials) presented a smiley with continuous visual feedback during the cue period (3-7.5 s). EEG and EOG were recorded with g.tec amplifiers at 250 Hz, with a 0.5-100 Hz bandpass and 50 Hz notch filter. The EEG ground was at Fz, and the EOG channels were referenced to the left mastoid. Stimulus presentation used rtsBCI (MATLAB/Simulink).",
+  "description": "EEG recordings from 9 healthy, BCI-naive participants performing two-class motor imagery (left vs. right hand), known as BCI Competition IV Dataset 2b (Graz data set B). Each participant completed five sessions: two screening sessions without feedback and three sessions with smiley feedback. Three bipolar EEG channels (C3, Cz, C4) were recorded at 250 Hz. This BIDS deposit was derived from the original files using MOABB.",
+  "methods_description": "Participants performed kinesthetic motor imagery of left or right hand movements. Screening sessions comprised 120 trials without feedback, and feedback sessions comprised 160 trials with continuous smiley feedback. Three bipolar EEG channels (C3, Cz, C4) and three monopolar EOG channels were recorded at 250 Hz with g.tec amplifiers, a 0.5-100 Hz bandpass filter and a 50 Hz notch filter. The reference was the left mastoid and the ground was Fz.",
   "license": "CC-BY-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -19,6 +19,9 @@
   },
   "keywords": [
     {
+      "term": "EEG"
+    },
+    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
@@ -29,18 +32,13 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "Imagination",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D007092"
-    },
-    {
       "term": "motor imagery"
     },
     {
       "term": "BCI competition"
     },
     {
-      "term": "smiley feedback"
+      "term": "neurofeedback"
     }
   ],
   "related_identifiers": [
@@ -76,7 +74,7 @@
     "eeg"
   ],
   "sizes": [
-    "478 MB (24 files)"
+    "662 MB (64 files)"
   ],
   "formats": [
     ".bdf",
@@ -87,5 +85,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "e8296c8938c73449064453c3e1b92d6bcbfeb40456f72716779dea0f818ec25d"
+  "source_hash": "220f6be1e7a9cc6e1181e6627cc5d4e04ac66b470a73981b4b64b90165aff06c"
 }
