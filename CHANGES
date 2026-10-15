@@ -1,0 +1,21 @@
+1.1.0 2026-10-15
+  - Added sub-2 to sub-9 (8 subjects, 40 recordings). They were converted from the B02-B09 .mat files
+    already in sourcedata/ (SHA-256 checked against sourcedata_provenance.json) with the code that wrote
+    sub-1: MOABB 1.4.3 (commit 4a34250a), BNCI2014_004 and BaseDataset.convert_to_bids(format="BDF").
+    Regenerating sub-1 the same way gives 45 of its 55 files byte for byte (all BDF,
+    events, channels, eeg.json and scans files); the 10 electrodes.tsv/coordsystem.json files hold
+    the same template (standard_1005) positions, differing by at most 7.5 nm per coordinate
+    (floating-point differences between the 2026 build machines).
+  - events.tsv of the new subjects: onset set to the trigger time (MOABB epoching offset of 3.0 s removed,
+    sample column adjusted), as done for sub-1 in 1.0.3.
+  - participants.tsv: rows for sub-2 to sub-9. README: Deposit contents section. This CHANGES file.
+  - sub-1 and sourcedata/ unchanged.
+1.0.3 2026-10-08
+  - events.tsv (sub-1, 5 files): onset set to the trigger time (MOABB epoching offset of 3.0 s removed;
+    sample column adjusted).
+1.0.2 2026-08-18
+  - sourcedata/sourcedata_provenance.json: subject recorded for each source file.
+1.0.1 2026-08-11
+  - Added sourcedata/: the 18 original .mat files (all 9 subjects) with SHA-256 checksums.
+1.0.0 2026-04-17
+  - First release: sub-1, converted with MOABB 1.4.3.
