@@ -16,6 +16,16 @@ BNCI 2014-004 Motor Imagery dataset.
 - **Session IDs**: 01T, 02T, 03T, 04E, 05E
 - **File format**: GDF
 
+## Deposit contents
+
+- **Subjects in this deposit**: 9 (sub-1 to sub-9)
+- **Recordings**: 45 BDF files, one per session (sessions 0train, 1train, 2train, 3test, 4test; run 0)
+- **Channels in the BDF files**: C3, Cz, C4 (EEG) at 250 Hz; the three EOG channels of the source files are not included
+- **Events**: 6520 trials (3260 left_hand, 3260 right_hand); onsets are trigger times
+- **Total recording time**: 26.28 h
+- **sourcedata/**: the 18 original `.mat` files (B01-B09, T and E), byte-for-byte, with SHA-256 checksums in `sourcedata/sourcedata_provenance.json`
+- Versions 1.0.0 to 1.0.3 contained sub-1 only. Version 1.1.0 adds sub-2 to sub-9, converted from the `.mat` files in `sourcedata/` with the same MOABB code as sub-1. See `CHANGES`.
+
 ## Acquisition
 
 - **Sampling rate**: 250.0 Hz
